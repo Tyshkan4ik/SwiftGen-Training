@@ -17,10 +17,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemMint
+        view.backgroundColor = Asset.Colors.myColors.color
         setupElements()
         setupConstraints()
-        imageView.image = Asset.surf.image
+        imageView.image = Asset.Assets.surf.image
     }
 
     private func setupElements() {

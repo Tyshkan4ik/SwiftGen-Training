@@ -6,7 +6,7 @@
 xcassets:
   inputs:
     - SwiftGen Training/Assets.xcassets
-#    - Test/Colors.xcassets
+    - SwiftGen Training/Colors.xcassets
   outputs:
     - templateName: swift5
       output: SwiftGen Training/SwiftGen/Assets.swift
