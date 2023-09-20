@@ -1,8 +1,8 @@
-#strings:
-#  inputs: SwiftGen Training/Base.lproj
-#  outputs:
-#    - templateName: structured-swift5
-#      output: SwiftGen Training/SwiftGen/Strings.swift
+strings:
+  inputs: SwiftGen Training/Base.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: SwiftGen Training/SwiftGen/Strings.swift
 xcassets:
   inputs:
     - SwiftGen Training/Assets.xcassets
