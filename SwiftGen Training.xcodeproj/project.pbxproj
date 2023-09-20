@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81A629832ABADF5200BBB93F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A629822ABADF5200BBB93F /* Assets.swift */; };
 		81E87FA32AB9E2CE0013624A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E87FA22AB9E2CE0013624A /* AppDelegate.swift */; };
 		81E87FA52AB9E2CE0013624A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E87FA42AB9E2CE0013624A /* SceneDelegate.swift */; };
 		81E87FA72AB9E2CE0013624A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E87FA62AB9E2CE0013624A /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		76B27CD50771B8CCB22AD6AC /* Pods_SwiftGen_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftGen_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A6297E2ABADDD100BBB93F /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		81A629822ABADF5200BBB93F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		81E87F9F2AB9E2CE0013624A /* SwiftGen Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftGen Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E87FA22AB9E2CE0013624A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E87FA42AB9E2CE0013624A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,13 +57,21 @@
 				E8C2EDF39B99F100E26D6B30 /* Pods-SwiftGen Training.debug.xcconfig */,
 				88657B215AAB952A572C7BFE /* Pods-SwiftGen Training.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		81A6297F2ABADE1400BBB93F /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				81A629822ABADF5200BBB93F /* Assets.swift */,
+			);
+			path = SwiftGen;
 			sourceTree = "<group>";
 		};
 		81E87F962AB9E2CE0013624A = {
 			isa = PBXGroup;
 			children = (
+				81A6297E2ABADDD100BBB93F /* swiftgen.yml */,
 				81E87FA12AB9E2CE0013624A /* SwiftGen Training */,
 				81E87FA02AB9E2CE0013624A /* Products */,
 				60C3BBC64397C3A64DC2F4D1 /* Pods */,
@@ -79,6 +90,7 @@
 		81E87FA12AB9E2CE0013624A /* SwiftGen Training */ = {
 			isa = PBXGroup;
 			children = (
+				81A6297F2ABADE1400BBB93F /* SwiftGen */,
 				81E87FA22AB9E2CE0013624A /* AppDelegate.swift */,
 				81E87FA42AB9E2CE0013624A /* SceneDelegate.swift */,
 				81E87FA62AB9E2CE0013624A /* ViewController.swift */,
@@ -97,6 +109,7 @@
 			buildConfigurationList = 81E87FB32AB9E2CF0013624A /* Build configuration list for PBXNativeTarget "SwiftGen Training" */;
 			buildPhases = (
 				2810A9E40B9BC2A4428731A1 /* [CP] Check Pods Manifest.lock */,
+				81A6297D2ABADD8A00BBB93F /* SwiftGen */,
 				81E87F9B2AB9E2CE0013624A /* Sources */,
 				81E87F9C2AB9E2CE0013624A /* Frameworks */,
 				81E87F9D2AB9E2CE0013624A /* Resources */,
@@ -178,6 +191,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		81A6297D2ABADD8A00BBB93F /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Pods/SwiftGen/bin/swiftgen\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -187,6 +218,7 @@
 			files = (
 				81E87FA72AB9E2CE0013624A /* ViewController.swift in Sources */,
 				81E87FA32AB9E2CE0013624A /* AppDelegate.swift in Sources */,
+				81A629832ABADF5200BBB93F /* Assets.swift in Sources */,
 				81E87FA52AB9E2CE0013624A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

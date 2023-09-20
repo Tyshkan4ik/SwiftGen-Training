@@ -1,0 +1,13 @@
+#strings:
+#  inputs: SwiftGen Training/Base.lproj
+#  outputs:
+#    - templateName: structured-swift5
+#      output: SwiftGen Training/SwiftGen/Strings.swift
+xcassets:
+  inputs:
+    - SwiftGen Training/Assets.xcassets
+#    - Test/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: SwiftGen Training/SwiftGen/Assets.swift
+

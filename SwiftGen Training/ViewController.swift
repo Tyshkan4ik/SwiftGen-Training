@@ -9,11 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy var imageView: UIImageView = {
+       let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemMint
+        setupElements()
+        setupConstraints()
+        imageView.image = Asset.surf.image
     }
 
-
+    private func setupElements() {
+        view.addSubview(imageView)
+//        view.addSubview(label)
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            imageView.widthAnchor.constraint(equalToConstant: 300),
+            imageView.heightAnchor.constraint(equalToConstant: 300),
+            
+//            label.bottomAnchor.constraint(equalTo: imageView.topAnchor, constant: -50),
+//            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+//            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+    }
 }
 
