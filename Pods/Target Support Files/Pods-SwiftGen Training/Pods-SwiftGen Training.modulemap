@@ -1,0 +1,6 @@
+framework module Pods_SwiftGen_Training {
+  umbrella header "Pods-SwiftGen Training-umbrella.h"
+
+  export *
+  module * { export * }
+}

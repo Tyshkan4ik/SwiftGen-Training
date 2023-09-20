@@ -12,9 +12,11 @@
 		81E87FA72AB9E2CE0013624A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E87FA62AB9E2CE0013624A /* ViewController.swift */; };
 		81E87FAC2AB9E2CF0013624A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E87FAB2AB9E2CF0013624A /* Assets.xcassets */; };
 		81E87FAF2AB9E2CF0013624A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E87FAD2AB9E2CF0013624A /* LaunchScreen.storyboard */; };
+		EBE5DA70E8522F41FFCCA30E /* Pods_SwiftGen_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B27CD50771B8CCB22AD6AC /* Pods_SwiftGen_Training.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76B27CD50771B8CCB22AD6AC /* Pods_SwiftGen_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftGen_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E87F9F2AB9E2CE0013624A /* SwiftGen Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftGen Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E87FA22AB9E2CE0013624A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E87FA42AB9E2CE0013624A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		81E87FAB2AB9E2CF0013624A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E87FAE2AB9E2CF0013624A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E87FB02AB9E2CF0013624A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88657B215AAB952A572C7BFE /* Pods-SwiftGen Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGen Training.release.xcconfig"; path = "Target Support Files/Pods-SwiftGen Training/Pods-SwiftGen Training.release.xcconfig"; sourceTree = "<group>"; };
+		E8C2EDF39B99F100E26D6B30 /* Pods-SwiftGen Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGen Training.debug.xcconfig"; path = "Target Support Files/Pods-SwiftGen Training/Pods-SwiftGen Training.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE5DA70E8522F41FFCCA30E /* Pods_SwiftGen_Training.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040E5BFFBCCCE877FA06A6DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B27CD50771B8CCB22AD6AC /* Pods_SwiftGen_Training.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60C3BBC64397C3A64DC2F4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8C2EDF39B99F100E26D6B30 /* Pods-SwiftGen Training.debug.xcconfig */,
+				88657B215AAB952A572C7BFE /* Pods-SwiftGen Training.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		81E87F962AB9E2CE0013624A = {
 			isa = PBXGroup;
 			children = (
 				81E87FA12AB9E2CE0013624A /* SwiftGen Training */,
 				81E87FA02AB9E2CE0013624A /* Products */,
+				60C3BBC64397C3A64DC2F4D1 /* Pods */,
+				040E5BFFBCCCE877FA06A6DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81E87FB32AB9E2CF0013624A /* Build configuration list for PBXNativeTarget "SwiftGen Training" */;
 			buildPhases = (
+				2810A9E40B9BC2A4428731A1 /* [CP] Check Pods Manifest.lock */,
 				81E87F9B2AB9E2CE0013624A /* Sources */,
 				81E87F9C2AB9E2CE0013624A /* Frameworks */,
 				81E87F9D2AB9E2CE0013624A /* Resources */,
@@ -128,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2810A9E40B9BC2A4428731A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftGen Training-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81E87F9B2AB9E2CE0013624A /* Sources */ = {
@@ -270,6 +321,7 @@
 		};
 		81E87FB42AB9E2CF0013624A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C2EDF39B99F100E26D6B30 /* Pods-SwiftGen Training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +349,7 @@
 		};
 		81E87FB52AB9E2CF0013624A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88657B215AAB952A572C7BFE /* Pods-SwiftGen Training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
